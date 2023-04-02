@@ -2,11 +2,11 @@ package com.knoldus;
 
 public class Person {
     private String name;
-    private int age;
+    private int personAge;
 
-    public Person(String name, int age) {
+    public Person(String name, int personAge) {
         this.name = name;
-        this.age = age;
+        this.personAge = personAge;
     }
 
     public String getName() {
@@ -18,10 +18,14 @@ public class Person {
     }
 
     public int getAge() {
-        return age;
+        return personAge;
     }
 
     public void setAge(int age) {
-        this.age = age;
+        this.personAge = age;
     }
+    public boolean isAdult() {
+        return personAge >= 18;
+    }
+
 }
